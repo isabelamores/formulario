@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="diseño.css">
+  </head>
+  <body>
+    <section class="form">
+      <h5>Formulario</h5>
+      <form method="post" onsubmit="return validarFormulario()">
+      <label>Nombre</label><br><br>
+      <input class="controls" id="nombre" name="nombre"  placeholder="Nombre" required>
+      <label>Correo electrónico</label><br><br>
+      <input class="controls" type="email" id="correo" name="correo" required placeholder="nombre@ejemplo.com" required>
+      <label>Comentarios</label><br><br>
+      <textarea class="controls" id="comentarios" name="comentarios" rows="5" cols="15" required></textarea><br>
+      <input class="buttons" type="submit" name="enviar" value="Enviar">
+    </form>
+    </section>
+    <script src="funcion.js"></script>
+  </body>
+</html>
